@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Import leaflet jquery and slide bar-->
+    <script src="libraries/leaflet-src.js"></script>
+    <script src="libraries/jquery.js"></script>
+    <script src="libraries/leaflet-sidebar.js"></script>
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="css/bootstrap-slider.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/leaflet-sidebar.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Master</title>
+  </head>
+
+
+  <body>
+    <!-- nav bar -->
+
+    <!-- end nav bar -->
+    <!-- banner -->
+      <!-- end banner -->
+      <div id="sidebar" class="leaflet-sidebar collapsed">
+        <!-- declare the first tab -->
+              <div class="leaflet-sidebar-tabs">
+                  <ul role="tablist">
+                      <li><a href="#legend" role="tab"><i class="fa fa-bars active"></i></a></li>
+                  </ul>
+              </div>
+          <!-- end of first tab -->
+              <!-- panel content -->
+              <div class="leaflet-sidebar-content">
+                  <div class="leaflet-sidebar-pane" id="legend">
+                      <h1 class="leaflet-sidebar-header">Tropical Moist Forests (TMF) - Transition map<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                      <p class="legend_text">Legend</p>
+                      <div class="c-legend-content"><ul class="c-legend-choropleth">
+                        <li><div class="country_05m icon-choropleth" style="background-color: #005000; "></div><span class="name"><i>Undisturbed tropical moist forest</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #0a640a; "></div><span class="name"><i>Bamboo-dominated forest</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #0a5a3c; "></div><span class="name"><i>Undisturbed mangrove</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #146400; "></div><span class="name"><i>Degraded forest before the observation period</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #1e7800; "></div><span class="name"><i>Degraded forest with short-duration disturbance (started before 2000)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #328c00; "></div><span class="name"><i>Degraded forest with short-duration disturbance (started in 2000-2009)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #509600; "></div><span class="name"><i>Degraded forest with short-duration disturbance (started in 2010-2018)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #64a028; "></div><span class="name"><i>Degraded forest with long-duration disturbance (started before 2000)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #78aa28; "></div><span class="name"><i>Degraded forest with long-duration disturbance (started in 2000-2009)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #96b432; "></div><span class="name"><i>Degraded forest with long-duration disturbance (started in 2010-2018)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #64a028; "></div><span class="name"><i>Degraded forest with 2/3 short degradation periods (last degradation started before 1999)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #78aa28; "></div><span class="name"><i>Degraded forest with 2/3 short degradation periods (last degradation started in 2000-2009)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #96b432; "></div><span class="name"><i>Degraded forest with 2/3 short degradation periods (last degradation started in 2010-2018)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #b9c83c; "></div><span class="name"><i>Old forest regrowth (disturbed before 2000)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #c8e63c; "></div><span class="name"><i>Young forest regrowth (disturbed in 2000-2009)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #d2fa3c; "></div><span class="name"><i>Very young forest regrowth (disturbed in 2010-2016)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #fff0c8; "></div><span class="name"><i>Deforestation started before 2000</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffe664; "></div><span class="name"><i>Deforestation started in 2000-2009</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffbe2d; "></div><span class="name"><i>Deforestation started in 2010</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffaa14; "></div><span class="name"><i>Deforestation started in 2011</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ff960a; "></div><span class="name"><i>Deforestation started in 2012</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ff820a; "></div><span class="name"><i>Deforestation started in 2013</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ff6e0a; "></div><span class="name"><i>Deforestation started in 2014</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ff5a0a; "></div><span class="name"><i>Deforestation started in 2015</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ff500a; "></div><span class="name"><i>Deforestation started in 2016</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #fa3c0a; "></div><span class="name"><i>Deforestation started in 2017</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #aa500a; "></div><span class="name"><i>Deforestation started in 2018</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #8c641e; "></div><span class="name"><i>Deforestation started in 2019</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #8c783c; "></div><span class="name"><i>Degradation started in 2019</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #286432; "></div><span class="name"><i>Degraded mangrove (started before 2010</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #509600; "></div><span class="name"><i>Degraded mangrove (started in 2010 -2018)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #c8e63c; "></div><span class="name"><i>Mangrove regrowthing (distrubed in 2010-2019)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #d2fa3c; "></div><span class="name"><i>Mangrove regrowthing (distrubed in 2017-2019)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffe66e; "></div><span class="name"><i>Mangrove deforested (started in 1990-1999)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffb419; "></div><span class="name"><i>Mangrove deforested (started in 2000-2009)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ff3c0a; "></div><span class="name"><i>Mangrove deforested (started in 2010-2016)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #9b6946; "></div><span class="name"><i>Mangrove recently disturbed (started in 2017-2019)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #003296; "></div><span class="name"><i>Permanent Water (Pekel et al, 2016)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #0096c8; "></div><span class="name"><i>Seasonal Water  (Pekel et al, 2016)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #00a096; "></div><span class="name"><i>Deforestation to permanent Water</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #00d2d2; "></div><span class="name"><i>Deforestation to seasonal water</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #336333; "></div><span class="name"><i>Old tree plantation (established before 1990)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #62a150; "></div><span class="name"><i>Tree plantation regrowthing (established in 1990-2009)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #bcd169; "></div><span class="name"><i>Tree plantation regrowthing (established in 2010-2016)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffe494; "></div><span class="name"><i>Conversion to tree plantation (established in 1990-1999)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffd080; "></div><span class="name"><i>Conversion to tree plantation (established  in 2000-2009)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #fab496; "></div><span class="name"><i>Conversion to tree plantation (established  in 2010-2016)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #cca3a3; "></div><span class="name"><i>Conversion to tree plantation (established in 2017-2019)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #ffffff; "></div><span class="name"><i>Other Land Cover</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #edffd7; "></div><span class="name"><i>Other LC recently regrowthing (between 3 and 9 years)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #e0fa9d; "></div><span class="name"><i>Other LC recently regrowthing (between 10 and 19 years)</i></span></li>
+                        <li><div class="country_05m icon-choropleth" style="background-color: #d6fabc; "></div><span class="name"><i>Other LC: from water to regrowth (at least 3 years)</i></span></li>
+                                                </ul>
+                                                </div>
+
+                  </div>
+          </div>
+          <!-- end of panel content -->
+        </div>
+        <!-- div map -->
+	      <div id="map"></div>
+        <!-- end of map -->
+  </body>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script>
+  $(".button-collapse").sideNav();
+  </script>
+  <!-- include our own javascript -->
+  <script src="stats.js"></script>
+
+      <script src="libraries/bootstrap-slider.js"></script>
+      <script src="libraries/highcharts.js"></script>
+      <script src="libraries/highcharts_more.js"></script>
+</html>
